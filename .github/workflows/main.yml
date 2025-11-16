@@ -27,6 +27,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run test script
+        env:
+          MATRIX_NAME: "testing"
         run: |
           chmod +x ./testscript.sh
           ./testscript.sh
